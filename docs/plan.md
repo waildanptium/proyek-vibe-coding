@@ -5,9 +5,9 @@ Aturan: kerjakan berurutan dari atas. Centang `[x]` setelah selesai dan sesuai D
 ## Fase 0 — Persiapan
 - [x] 0.1 Buat repo GitHub dan clone ke lokal
 - [x] 0.2 Inisialisasi proyek React dengan Vite (JavaScript)
-- [ ] 0.3 Pasang dependency yang disetujui: `@supabase/supabase-js`, `react-router-dom`, `tailwindcss`
-- [ ] 0.4 Buat struktur folder sesuai `agent.md`
-- [ ] 0.5 Buat `.env.example`, pastikan `.env` ada di `.gitignore`
+- [x] 0.3 Pasang dependency yang disetujui: `@supabase/supabase-js`, `react-router-dom`, `tailwindcss`
+- [x] 0.4 Buat struktur folder sesuai `agent.md`
+- [x] 0.5 Buat `.env.example`, pastikan `.env` ada di `.gitignore`
 - [ ] 0.6 Buat proyek di Supabase, isi `.env` lokal
 
 ## Fase 1 — Database
