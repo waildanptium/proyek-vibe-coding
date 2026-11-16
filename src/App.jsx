@@ -1,7 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import AppLayout from './components/AppLayout.jsx'
 import AuthProvider from './hooks/AuthProvider.jsx'
+import LoginPage from './pages/LoginPage.jsx'
 import PlaceholderPage from './pages/PlaceholderPage.jsx'
+import RegisterPage from './pages/RegisterPage.jsx'
 import './App.css'
 
 function App() {
@@ -21,11 +23,11 @@ function App() {
             />
             <Route
               path="login"
-              element={<PlaceholderPage title="Masuk" />}
+              element={<LoginPage />}
             />
             <Route
               path="register"
-              element={<PlaceholderPage title="Daftar" />}
+              element={<RegisterPage />}
             />
             <Route
               path="tasks"
