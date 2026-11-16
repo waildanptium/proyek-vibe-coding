@@ -22,9 +22,9 @@ Aturan: kerjakan berurutan dari atas. Centang `[x]` setelah selesai dan sesuai D
 - [ ] 2.4 `ProtectedRoute`
 
 ## Fase 3 — Autentikasi
-- [ ] 3.1 Halaman Register
-- [ ] 3.2 Halaman Login
-- [ ] 3.3 Tombol Logout di navbar
+- [x] 3.1 Halaman Register
+- [x] 3.2 Halaman Login
+- [x] 3.3 Tombol Logout di navbar
 - [ ] 3.4 Penanganan error (email sudah terdaftar, password salah)
 
 ## Fase 4 — Manajemen Tugas

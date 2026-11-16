@@ -4,9 +4,9 @@ Aturan pengisian: AI WAJIB memperbarui file ini di akhir setiap sesi. Entri terb
 
 ## Status Saat Ini
 - Fase aktif: Fase 1 — Database (menunggu langkah manual 1.2–1.3)
-- Tugas terakhir selesai: 2.3 `authService.js` dan hook/context `useAuth` (menyimpan sesi)
+- Tugas terakhir selesai: 3.3 Tombol Logout di navbar
 - Tugas berikutnya: 1.2 Jalankan di Supabase SQL Editor
-- Kendala yang belum selesai: Tugas 1.2 dan 1.3 menunggu SQL dijalankan serta RLS diuji manual oleh pengguna.
+- Kendala yang belum selesai: Tugas 1.2 dan 1.3 menunggu SQL dijalankan serta RLS diuji manual oleh pengguna; 2.4 dan 3.4 belum dikerjakan.
 
 ## Keputusan Penting
 Catat keputusan teknis yang sudah final agar tidak dibahas ulang.
@@ -17,6 +17,12 @@ Catat keputusan teknis yang sudah final agar tidak dibahas ulang.
 (belum ada)
 
 ## Log Sesi
+
+### Sesi 11 — 2026-11-16
+- Yang dikerjakan: Membuat halaman Daftar dan Masuk dengan email/password, validasi input dasar, loading/error/success feedback, serta tombol Keluar saat pengguna masuk.
+- File yang dibuat/diubah: `src/pages/RegisterPage.jsx`, `src/pages/LoginPage.jsx`, `src/components/AppLayout.jsx`, `src/App.jsx`, `src/App.css`, `docs/plan.md`, `docs/history.md`.
+- Masalah ditemukan & solusinya: Tidak ada. Lint/build berhasil dan halaman Masuk/Daftar diperiksa di browser. Alur auth tidak diuji dengan akun Supabase nyata.
+- Catatan untuk sesi berikutnya: Tugas 2.4 (ProtectedRoute) dan 3.4 (pemetaan error email terdaftar/password salah) belum selesai; tugas database 1.2–1.3 tetap menunggu langkah manual.
 
 ### Sesi 10 — 2026-11-16
 - Yang dikerjakan: Membuat klien Supabase dari `VITE_SUPABASE_URL` dan `VITE_SUPABASE_ANON_KEY`, layout responsif dan rute sesuai spec, serta layanan autentikasi dan context/hook untuk sesi.
