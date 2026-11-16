@@ -3,10 +3,10 @@
 Aturan pengisian: AI WAJIB memperbarui file ini di akhir setiap sesi. Entri terbaru ditaruh paling atas di bagian "Log Sesi". Tulis singkat dan faktual.
 
 ## Status Saat Ini
-- Fase aktif: Fase 0 — Persiapan
-- Tugas terakhir selesai: 0.5 Buat `.env.example`, pastikan `.env` ada di `.gitignore`
-- Tugas berikutnya: 0.6 Buat proyek di Supabase, isi `.env` lokal
-- Kendala yang belum selesai: `.env` ada dan diabaikan Git, tetapi kode belum membaca variabel Supabase melalui `import.meta.env`; hal ini direncanakan pada tugas 2.1.
+- Fase aktif: Fase 1 — Database
+- Tugas terakhir selesai: 1.1 Buat `supabase/migrations/001_create_tasks.sql` dari model data di `spec.md`
+- Tugas berikutnya: 1.2 Jalankan di Supabase SQL Editor
+- Kendala yang belum selesai: Tugas 1.2 dan 1.3 menunggu SQL dijalankan serta RLS diuji manual oleh pengguna.
 
 ## Keputusan Penting
 Catat keputusan teknis yang sudah final agar tidak dibahas ulang.
@@ -17,6 +17,18 @@ Catat keputusan teknis yang sudah final agar tidak dibahas ulang.
 (belum ada)
 
 ## Log Sesi
+
+### Sesi 9 — 2026-11-16
+- Yang dikerjakan: Membuat migrasi tabel `public.tasks`, indeks `tasks_user_due_idx`, mengaktifkan RLS, dan menambahkan empat kebijakan sesuai `docs/spec.md`.
+- File yang dibuat/diubah: `supabase/migrations/001_create_tasks.sql`, `docs/plan.md`, `docs/history.md`.
+- Masalah ditemukan & solusinya: Tidak ada. SQL tidak dijalankan; tugas 1.2 dan 1.3 menunggu tindakan manual pengguna.
+- Catatan untuk sesi berikutnya: Jalankan file migrasi melalui Supabase SQL Editor, lalu verifikasi RLS dengan dua akun sebelum mencentang 1.2 dan 1.3.
+
+### Sesi 8 — 2026-11-16
+- Yang dikerjakan: Memverifikasi syarat 0.6 sesuai revisi: proyek Supabase sudah dibuat menurut pengguna, `.env` ada dan diabaikan Git, serta `.env.example` berisi nama variabel dengan nilai kosong.
+- File yang dibuat/diubah: `docs/plan.md`, `docs/history.md`.
+- Masalah ditemukan & solusinya: Tidak ada; isi `.env` tidak dibaca atau diubah. Pembacaan `import.meta.env` tetap menjadi bagian tugas 2.1.
+- Catatan untuk sesi berikutnya: Lanjut ke tugas 1.1 di `plan.md`.
 
 ### Sesi 7 — 2026-11-16
 - Yang dikerjakan: Memverifikasi `.env` ada dan diabaikan Git tanpa membaca isinya; mencari penggunaan `VITE_SUPABASE_URL` dan `VITE_SUPABASE_ANON_KEY` melalui `import.meta.env` di kode.

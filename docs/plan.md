@@ -8,10 +8,10 @@ Aturan: kerjakan berurutan dari atas. Centang `[x]` setelah selesai dan sesuai D
 - [x] 0.3 Pasang dependency yang disetujui: `@supabase/supabase-js`, `react-router-dom`, `tailwindcss`
 - [x] 0.4 Buat struktur folder sesuai `agent.md`
 - [x] 0.5 Buat `.env.example`, pastikan `.env` ada di `.gitignore`
-- [ ] 0.6 Buat proyek di Supabase, isi `.env` lokal
+- [x] 0.6 Buat proyek di Supabase, isi `.env` lokal
 
 ## Fase 1 — Database
-- [ ] 1.1 Buat `supabase/migrations/001_create_tasks.sql` dari model data di `spec.md`
+- [x] 1.1 Buat `supabase/migrations/001_create_tasks.sql` dari model data di `spec.md`
 - [ ] 1.2 Jalankan di Supabase SQL Editor
 - [ ] 1.3 Verifikasi RLS aktif (uji dengan 2 akun berbeda)
 
