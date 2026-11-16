@@ -6,7 +6,7 @@ Aturan pengisian: AI WAJIB memperbarui file ini di akhir setiap sesi. Entri terb
 - Fase aktif: Fase 0 — Persiapan
 - Tugas terakhir selesai: 0.5 Buat `.env.example`, pastikan `.env` ada di `.gitignore`
 - Tugas berikutnya: 0.6 Buat proyek di Supabase, isi `.env` lokal
-- Kendala yang belum selesai: Tugas 0.6 menunggu pembuatan proyek Supabase dan pengisian `.env` secara manual oleh pengguna.
+- Kendala yang belum selesai: `.env` ada dan diabaikan Git, tetapi kode belum membaca variabel Supabase melalui `import.meta.env`; hal ini direncanakan pada tugas 2.1.
 
 ## Keputusan Penting
 Catat keputusan teknis yang sudah final agar tidak dibahas ulang.
@@ -17,6 +17,12 @@ Catat keputusan teknis yang sudah final agar tidak dibahas ulang.
 (belum ada)
 
 ## Log Sesi
+
+### Sesi 7 — 2026-11-16
+- Yang dikerjakan: Memverifikasi `.env` ada dan diabaikan Git tanpa membaca isinya; mencari penggunaan `VITE_SUPABASE_URL` dan `VITE_SUPABASE_ANON_KEY` melalui `import.meta.env` di kode.
+- File yang dibuat/diubah: `docs/history.md`.
+- Masalah ditemukan & solusinya: `.env` terdeteksi dan cocok dengan aturan `.gitignore`, tetapi belum ada penggunaan variabel tersebut di kode. Tugas 0.6 tidak dicentang karena syarat verifikasi belum terpenuhi; integrasi kode tercantum di tugas 2.1.
+- Catatan untuk sesi berikutnya: Jangan mengubah `.env`; implementasi pembacaan variabel dilakukan pada tugas 2.1 sesuai urutan `plan.md`.
 
 ### Sesi 6 — 2026-11-16
 - Yang dikerjakan: Meninjau tugas 0.6; pengerjaan dihentikan karena pembuatan proyek Supabase dan pengisian `.env` membutuhkan tindakan manual pengguna.
