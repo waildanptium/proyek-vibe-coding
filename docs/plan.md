@@ -16,9 +16,9 @@ Aturan: kerjakan berurutan dari atas. Centang `[x]` setelah selesai dan sesuai D
 - [ ] 1.3 Verifikasi RLS aktif (uji dengan 2 akun berbeda)
 
 ## Fase 2 — Fondasi Aplikasi
-- [ ] 2.1 `src/lib/supabaseClient.js`
-- [ ] 2.2 Layout dasar (navbar, container) dan konfigurasi React Router
-- [ ] 2.3 `authService.js` dan hook/context `useAuth` (menyimpan sesi)
+- [x] 2.1 `src/lib/supabaseClient.js`
+- [x] 2.2 Layout dasar (navbar, container) dan konfigurasi React Router
+- [x] 2.3 `authService.js` dan hook/context `useAuth` (menyimpan sesi)
 - [ ] 2.4 `ProtectedRoute`
 
 ## Fase 3 — Autentikasi

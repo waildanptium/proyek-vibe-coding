@@ -3,8 +3,8 @@
 Aturan pengisian: AI WAJIB memperbarui file ini di akhir setiap sesi. Entri terbaru ditaruh paling atas di bagian "Log Sesi". Tulis singkat dan faktual.
 
 ## Status Saat Ini
-- Fase aktif: Fase 1 — Database
-- Tugas terakhir selesai: 1.1 Buat `supabase/migrations/001_create_tasks.sql` dari model data di `spec.md`
+- Fase aktif: Fase 1 — Database (menunggu langkah manual 1.2–1.3)
+- Tugas terakhir selesai: 2.3 `authService.js` dan hook/context `useAuth` (menyimpan sesi)
 - Tugas berikutnya: 1.2 Jalankan di Supabase SQL Editor
 - Kendala yang belum selesai: Tugas 1.2 dan 1.3 menunggu SQL dijalankan serta RLS diuji manual oleh pengguna.
 
@@ -17,6 +17,12 @@ Catat keputusan teknis yang sudah final agar tidak dibahas ulang.
 (belum ada)
 
 ## Log Sesi
+
+### Sesi 10 — 2026-11-16
+- Yang dikerjakan: Membuat klien Supabase dari `VITE_SUPABASE_URL` dan `VITE_SUPABASE_ANON_KEY`, layout responsif dan rute sesuai spec, serta layanan autentikasi dan context/hook untuk sesi.
+- File yang dibuat/diubah: `src/lib/supabaseClient.js`, `src/services/authService.js`, `src/hooks/AuthContext.js`, `src/hooks/AuthProvider.jsx`, `src/hooks/useAuth.js`, `src/components/AppLayout.jsx`, `src/pages/PlaceholderPage.jsx`, `src/App.jsx`, `src/App.css`, `src/index.css`, `docs/plan.md`, `docs/history.md`.
+- Masalah ditemukan & solusinya: Peringatan Fast Refresh diselesaikan dengan memisahkan context, provider, dan hook. Lint/build berhasil; semua rute spec merespons HTTP 200. `.env` tidak dibaca atau diubah secara manual.
+- Catatan untuk sesi berikutnya: Jalankan migrasi di Supabase SQL Editor dan uji RLS dengan dua akun untuk menyelesaikan 1.2–1.3 sebelum lanjut sesuai urutan plan.
 
 ### Sesi 9 — 2026-11-16
 - Yang dikerjakan: Membuat migrasi tabel `public.tasks`, indeks `tasks_user_due_idx`, mengaktifkan RLS, dan menambahkan empat kebijakan sesuai `docs/spec.md`.
